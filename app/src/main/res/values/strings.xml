@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Ninja Storm</string>
+    <string name="sign_up"><i><b><u>Sign Up</u></b></i></string>
+    <string name="forgot_password"><i><b><u>Forgot Password?</u></b></i></string>
+</resources>

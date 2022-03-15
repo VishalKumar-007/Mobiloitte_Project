@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgAppLogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/app_logo_1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+
+    <ImageView
+        android:id="@+id/imgLogin"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:src="@drawable/text_login"
+        android:layout_below="@+id/imgAppLogo"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/txtEnterDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Please enter the details below to continue"
+        android:layout_below="@+id/imgLogin"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/etEnterEmail"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Enter email address"
+        android:background="#C0C0C0"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/txtEnterDetails"
+        android:layout_marginTop="20dp"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/etEnterPassword"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Enter password"
+        android:background="#C0C0C0"
+        android:height="40dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/etEnterEmail"
+        android:layout_marginTop="20dp"
+        android:inputType="textPassword" />
+
+    <ImageView
+        android:id="@+id/imgEyeButton"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/eye_button"
+        android:layout_below="@id/etEnterEmail"
+        android:layout_marginTop="23dp"
+        android:layout_alignParentEnd="true"
+        />
+
+    <CheckBox
+        android:id="@+id/cbRememberMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etEnterPassword"
+        android:text="Remember Me"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/txtForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etEnterPassword"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/forgot_password"
+        android:textSize="16sp"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_below="@+id/txtForgotPassword"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="#b22222"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtDontHaveAnAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account?"
+        android:layout_below="@id/btnLogin"
+        android:layout_marginTop="17dp"
+        android:layout_marginStart="95dp" />
+
+    <TextView
+        android:id="@+id/txtSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up"
+        android:textStyle="bold"
+        android:layout_below="@id/btnLogin"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="95dp"
+        android:layout_marginTop="15dp"
+        android:textSize="16sp"/>
+
+    <ImageView
+        android:id="@+id/imgfbLogo"
+        android:layout_width="41dp"
+        android:layout_height="41dp"
+        android:src="@drawable/fb_logo"
+        android:layout_below="@+id/txtDontHaveAnAccount"
+        android:layout_marginStart="145dp"
+        android:layout_marginTop="20dp" />
+
+    <ImageView
+        android:id="@+id/imgGoogleLogo"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:src="@drawable/google_logo"
+        android:layout_below="@+id/txtDontHaveAnAccount"
+        android:layout_marginEnd="145dp"
+        android:layout_marginTop="22dp"
+        android:layout_alignParentEnd="true"/>
+
+</RelativeLayout>
