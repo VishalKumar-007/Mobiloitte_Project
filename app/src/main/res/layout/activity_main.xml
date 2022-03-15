@@ -62,16 +62,6 @@
         android:layout_marginTop="20dp"
         android:inputType="textPassword" />
 
-    <ImageView
-        android:id="@+id/imgEyeButton"
-        android:layout_width="25dp"
-        android:layout_height="25dp"
-        android:src="@drawable/eye_button"
-        android:layout_below="@id/etEnterEmail"
-        android:layout_marginTop="23dp"
-        android:layout_alignParentEnd="true"
-        />
-
     <CheckBox
         android:id="@+id/cbRememberMe"
         android:layout_width="wrap_content"
