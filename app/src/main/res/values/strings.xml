@@ -12,5 +12,6 @@
     <string name="social_media_link"><b>Social media link</b></string>
     <string name="sign_up_1">Sign Up</string>
     <string name="login1"><u><i><b>Login</b></i></u></string>
+    <string name="agreement_string">I agree to only post truthful and relevant information that is helpful to others. I understand violating this will result in my account removal.</string>
 
 </resources>

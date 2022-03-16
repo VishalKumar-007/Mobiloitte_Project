@@ -161,7 +161,7 @@
 
         <ImageView
             android:id="@+id/imgYoutubeLogo"
-            android:layout_width="45dp"
+            android:layout_width="50dp"
             android:layout_height="50dp"
             android:src="@drawable/youtube_logo"
             android:layout_marginStart="10dp"
@@ -223,8 +223,9 @@
             android:layout_below="@+id/imgYoutubeLogo"
             android:layout_marginHorizontal="10dp"
             android:layout_marginTop="20dp"
-            android:text="I agree to only post truthful and relevant information that is helpful to others. I understand violating this will result in my account removal."
-            android:paddingStart="5dp"/>
+            android:text="@string/agreement_string"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"/>
 
         <Button
             android:id="@+id/btnSignUp"
