@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtSignUp1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/signup"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgDefaultDpPerson"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/default_dp_person"
+            android:layout_below="@+id/txtSignUp1"
+            android:layout_marginTop="15dp"/>
+
+        <EditText
+            android:id="@+id/etFullName"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginHorizontal="10dp"
+            android:paddingHorizontal="10dp"
+            android:hint="Fullname"
+            android:background="@drawable/style_rounded_corner"
+            android:backgroundTint="#dcdcdc"
+            android:layout_below="@+id/imgDefaultDpPerson"
+            android:layout_marginTop="25dp"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/etUserName"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginHorizontal="10dp"
+            android:paddingHorizontal="10dp"
+            android:hint="Username"
+            android:background="@drawable/style_rounded_corner"
+            android:backgroundTint="#dcdcdc"
+            android:layout_below="@+id/etFullName"
+            android:layout_marginTop="15dp"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/etEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginHorizontal="10dp"
+            android:paddingHorizontal="10dp"
+            android:hint="Email address"
+            android:background="@drawable/style_rounded_corner"
+            android:backgroundTint="#dcdcdc"
+            android:layout_below="@+id/etUserName"
+            android:layout_marginTop="15dp"
+            android:inputType="textEmailAddress"/>
+
+        <EditText
+            android:id="@+id/etPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginHorizontal="10dp"
+            android:paddingHorizontal="10dp"
+            android:hint="Phone number"
+            android:background="@drawable/style_rounded_corner"
+            android:backgroundTint="#dcdcdc"
+            android:layout_below="@+id/etEmailAddress"
+            android:layout_marginTop="15dp"
+            android:inputType="number"
+            tools:ignore="TextFields" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginHorizontal="10dp"
+            android:paddingHorizontal="10dp"
+            android:hint="Password"
+            android:background="@drawable/style_rounded_corner"
+            android:backgroundTint="#dcdcdc"
+            android:layout_below="@+id/etPhoneNumber"
+            android:layout_marginTop="15dp"
+            android:inputType="textPassword"/>
+
+        <EditText
+            android:id="@+id/etConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginHorizontal="10dp"
+            android:paddingHorizontal="10dp"
+            android:hint="Confirm password"
+            android:background="@drawable/style_rounded_corner"
+            android:backgroundTint="#dcdcdc"
+            android:layout_below="@+id/etPassword"
+            android:layout_marginTop="15dp"
+            android:inputType="textPassword"/>
+
+        <EditText
+            android:id="@+id/etBio"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginHorizontal="10dp"
+            android:paddingHorizontal="10dp"
+            android:hint="Bio"
+            android:background="@drawable/style_rounded_corner"
+            android:backgroundTint="#dcdcdc"
+            android:layout_below="@+id/etConfirmPassword"
+            android:layout_marginTop="15dp"
+            android:inputType="text"/>
+
+        <TextView
+            android:id="@+id/txtSocialMediaLink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/social_media_link"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/etBio"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="20dp"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgTwitterLogo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/twitter_logo"
+            android:layout_marginStart="10dp"
+            android:layout_below="@+id/txtSocialMediaLink"
+            android:layout_marginTop="20dp"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgfbLogo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/fb_logo_1"
+            android:layout_marginStart="10dp"
+            android:layout_below="@+id/imgTwitterLogo"
+            android:layout_marginTop="15dp"/>
+
+        <ImageView
+            android:id="@+id/imgInstaLogo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/insta_logo"
+            android:layout_marginStart="10dp"
+            android:layout_below="@+id/imgfbLogo"
+            android:layout_marginTop="15dp"/>
+
+        <ImageView
+            android:id="@+id/imgYoutubeLogo"
+            android:layout_width="45dp"
+            android:layout_height="50dp"
+            android:src="@drawable/youtube_logo"
+            android:layout_marginStart="10dp"
+            android:layout_below="@+id/imgInstaLogo"
+            android:layout_marginTop="15dp"/>
+
+        <EditText
+            android:id="@+id/etTwitterLink"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="Twitter link"
+            android:paddingHorizontal="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:background="#dcdcdc"
+            android:layout_toRightOf="@+id/imgTwitterLogo"
+            android:layout_below="@+id/txtSocialMediaLink"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/etFacebookLink"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="Facebook link"
+            android:paddingHorizontal="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:background="#dcdcdc"
+            android:layout_toRightOf="@+id/imgfbLogo"
+            android:layout_below="@+id/etTwitterLink"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/etInstagramLink"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="Instagram link"
+            android:paddingHorizontal="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:background="#dcdcdc"
+            android:layout_toRightOf="@+id/imgInstaLogo"
+            android:layout_below="@+id/imgfbLogo"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/etYoutubeLink"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="YouTube link"
+            android:paddingHorizontal="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:background="#dcdcdc"
+            android:layout_toRightOf="@+id/imgYoutubeLogo"
+            android:layout_below="@+id/etInstagramLink"
+            android:layout_marginTop="20dp"/>
+
+        <CheckBox
+            android:id="@+id/cbAgreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgYoutubeLogo"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="20dp"
+            android:text="I agree to only post truthful and relevant information that is helpful to others. I understand violating this will result in my account removal."
+            android:paddingStart="5dp"/>
+
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up_1"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_below="@+id/cbAgreement"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/style_rounded_corner">
+        </Button>
+
+        <TextView
+            android:id="@+id/txtAlreadyHaveAnAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account?"
+            android:layout_below="@id/btnSignUp"
+            android:layout_marginTop="17dp"
+            android:layout_marginStart="95dp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/txtLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login1"
+            android:layout_below="@id/btnSignUp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="95dp"
+            android:layout_marginTop="15dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="20dp"
+            />
+
+    </RelativeLayout>
+
+</ScrollView>

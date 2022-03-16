@@ -8,4 +8,9 @@
     <string name="login">Login</string>
     <string name="don_t_have_an_account">Don\'t have an account?</string>
     <string name="please_enter_the_details_below_to_continue">Please enter the details below to continue</string>
+    <string name="signup">Signup</string>
+    <string name="social_media_link"><b>Social media link</b></string>
+    <string name="sign_up_1">Sign Up</string>
+    <string name="login1"><u><i><b>Login</b></i></u></string>
+
 </resources>
