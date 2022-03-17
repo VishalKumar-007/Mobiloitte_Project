@@ -35,7 +35,7 @@
             android:layout_height="45dp"
             android:layout_marginHorizontal="10dp"
             android:paddingHorizontal="10dp"
-            android:hint="Fullname"
+            android:hint="@string/fullname"
             android:background="@drawable/style_rounded_corner"
             android:backgroundTint="#dcdcdc"
             android:layout_below="@+id/imgDefaultDpPerson"
@@ -48,7 +48,7 @@
             android:layout_height="45dp"
             android:layout_marginHorizontal="10dp"
             android:paddingHorizontal="10dp"
-            android:hint="Username"
+            android:hint="@string/username"
             android:background="@drawable/style_rounded_corner"
             android:backgroundTint="#dcdcdc"
             android:layout_below="@+id/etFullName"
@@ -61,7 +61,7 @@
             android:layout_height="45dp"
             android:layout_marginHorizontal="10dp"
             android:paddingHorizontal="10dp"
-            android:hint="Email address"
+            android:hint="@string/email_address"
             android:background="@drawable/style_rounded_corner"
             android:backgroundTint="#dcdcdc"
             android:layout_below="@+id/etUserName"
@@ -74,7 +74,7 @@
             android:layout_height="45dp"
             android:layout_marginHorizontal="10dp"
             android:paddingHorizontal="10dp"
-            android:hint="Phone number"
+            android:hint="@string/phone_number"
             android:background="@drawable/style_rounded_corner"
             android:backgroundTint="#dcdcdc"
             android:layout_below="@+id/etEmailAddress"
@@ -82,31 +82,45 @@
             android:inputType="number"
             tools:ignore="TextFields" />
 
-        <EditText
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/etPassword"
             android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:layout_marginHorizontal="10dp"
-            android:paddingHorizontal="10dp"
-            android:hint="Password"
-            android:background="@drawable/style_rounded_corner"
-            android:backgroundTint="#dcdcdc"
-            android:layout_below="@+id/etPhoneNumber"
-            android:layout_marginTop="15dp"
-            android:inputType="textPassword"/>
+            app:passwordToggleEnabled="true"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etPhoneNumber"
+            android:layout_marginTop="5dp">
 
-        <EditText
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="@string/enter_password"
+                android:backgroundTint="#dcdcdc"
+                android:paddingHorizontal="10dp"
+                android:layout_marginHorizontal="10dp"
+                android:background="@drawable/style_rounded_corner"
+                android:inputType="textPassword"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/etConfirmPassword"
             android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:layout_marginHorizontal="10dp"
-            android:paddingHorizontal="10dp"
-            android:hint="Confirm password"
-            android:background="@drawable/style_rounded_corner"
-            android:backgroundTint="#dcdcdc"
-            android:layout_below="@+id/etPassword"
-            android:layout_marginTop="15dp"
-            android:inputType="textPassword"/>
+            app:passwordToggleEnabled="true"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etPassword"
+            android:layout_marginTop="5dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="@string/confirm_password"
+                android:backgroundTint="#dcdcdc"
+                android:paddingHorizontal="10dp"
+                android:layout_marginHorizontal="10dp"
+                android:background="@drawable/style_rounded_corner"
+                android:inputType="textPassword"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
 
         <EditText
             android:id="@+id/etBio"
@@ -114,7 +128,7 @@
             android:layout_height="90dp"
             android:layout_marginHorizontal="10dp"
             android:paddingHorizontal="10dp"
-            android:hint="Bio"
+            android:hint="@string/bio"
             android:background="@drawable/style_rounded_corner"
             android:backgroundTint="#dcdcdc"
             android:layout_below="@+id/etConfirmPassword"
@@ -132,95 +146,115 @@
             android:layout_marginHorizontal="10dp"
             android:layout_marginTop="20dp"/>
 
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/imgTwitterLogo"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:src="@drawable/twitter_logo"
-            android:layout_marginStart="10dp"
-            android:layout_below="@+id/txtSocialMediaLink"
-            android:layout_marginTop="20dp"/>
-
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/imgfbLogo"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:src="@drawable/fb_logo_1"
-            android:layout_marginStart="10dp"
-            android:layout_below="@+id/imgTwitterLogo"
-            android:layout_marginTop="15dp"/>
-
-        <ImageView
-            android:id="@+id/imgInstaLogo"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:src="@drawable/insta_logo"
-            android:layout_marginStart="10dp"
-            android:layout_below="@+id/imgfbLogo"
-            android:layout_marginTop="15dp"/>
-
-        <ImageView
-            android:id="@+id/imgYoutubeLogo"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:src="@drawable/youtube_logo"
-            android:layout_marginStart="10dp"
-            android:layout_below="@+id/imgInstaLogo"
-            android:layout_marginTop="15dp"/>
-
-        <EditText
+        <RelativeLayout
             android:id="@+id/etTwitterLink"
             android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:hint="Twitter link"
-            android:paddingHorizontal="10dp"
-            android:layout_marginHorizontal="10dp"
-            android:background="#dcdcdc"
-            android:layout_toRightOf="@+id/imgTwitterLogo"
-            android:layout_below="@+id/txtSocialMediaLink"
-            android:layout_marginTop="20dp"/>
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtSocialMediaLink">
 
-        <EditText
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="45dp"
+                android:src="@drawable/twitter_logo"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="@string/twitter_link"
+                android:paddingHorizontal="10dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginEnd="10dp"
+                android:backgroundTint="#dcdcdc"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/style_rounded_corner_1"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
             android:id="@+id/etFacebookLink"
             android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:hint="Facebook link"
-            android:paddingHorizontal="10dp"
-            android:layout_marginHorizontal="10dp"
-            android:background="#dcdcdc"
-            android:layout_toRightOf="@+id/imgfbLogo"
-            android:layout_below="@+id/etTwitterLink"
-            android:layout_marginTop="20dp"/>
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etTwitterLink">
 
-        <EditText
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="45dp"
+                android:src="@drawable/fb_logo_1"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="@string/facebook_link"
+                android:paddingHorizontal="10dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginEnd="10dp"
+                android:backgroundTint="#dcdcdc"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/style_rounded_corner_1"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
             android:id="@+id/etInstagramLink"
             android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:hint="Instagram link"
-            android:paddingHorizontal="10dp"
-            android:layout_marginHorizontal="10dp"
-            android:background="#dcdcdc"
-            android:layout_toRightOf="@+id/imgInstaLogo"
-            android:layout_below="@+id/imgfbLogo"
-            android:layout_marginTop="20dp"/>
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etFacebookLink">
 
-        <EditText
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="45dp"
+                android:src="@drawable/insta_logo"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="@string/instagram_link"
+                android:paddingHorizontal="10dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginEnd="10dp"
+                android:backgroundTint="#dcdcdc"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/style_rounded_corner_1"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
             android:id="@+id/etYoutubeLink"
             android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:hint="YouTube link"
-            android:paddingHorizontal="10dp"
-            android:layout_marginHorizontal="10dp"
-            android:background="#dcdcdc"
-            android:layout_toRightOf="@+id/imgYoutubeLogo"
-            android:layout_below="@+id/etInstagramLink"
-            android:layout_marginTop="20dp"/>
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etInstagramLink">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="45dp"
+                android:src="@drawable/youtube_logo"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="@string/youtube_link"
+                android:paddingHorizontal="10dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginEnd="10dp"
+                android:backgroundTint="#dcdcdc"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/style_rounded_corner_1"/>
+
+        </RelativeLayout>
 
         <CheckBox
             android:id="@+id/cbAgreement"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/imgYoutubeLogo"
+            android:layout_below="@+id/etYoutubeLink"
             android:layout_marginHorizontal="10dp"
             android:layout_marginTop="20dp"
             android:text="@string/agreement_string"
@@ -245,7 +279,7 @@
             android:id="@+id/txtAlreadyHaveAnAccount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Already have an account?"
+            android:text="@string/already_have_an_account"
             android:layout_below="@id/btnSignUp"
             android:layout_marginTop="17dp"
             android:layout_marginStart="95dp"
@@ -261,8 +295,7 @@
             android:layout_marginEnd="95dp"
             android:layout_marginTop="15dp"
             android:textSize="16sp"
-            android:layout_marginBottom="20dp"
-            />
+            android:layout_marginBottom="20dp" />
 
     </RelativeLayout>
 

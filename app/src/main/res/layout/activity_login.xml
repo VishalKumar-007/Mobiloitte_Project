@@ -35,8 +35,8 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/etEnterEmail"
         android:layout_width="match_parent"
-        app:helperText="*Required"
         app:counterEnabled="true"
+        app:helperText="*Required"
         app:helperTextTextColor="#FF0000"
         app:counterMaxLength="30"
         app:helperTextEnabled="true"

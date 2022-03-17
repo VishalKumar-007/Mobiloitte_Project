@@ -13,5 +13,16 @@
     <string name="sign_up_1">Sign Up</string>
     <string name="login1"><u><i><b>Login</b></i></u></string>
     <string name="agreement_string">I agree to only post truthful and relevant information that is helpful to others. I understand violating this will result in my account removal.</string>
+    <string name="twitter_link">Twitter link</string>
+    <string name="facebook_link">Facebook link</string>
+    <string name="instagram_link">Instagram link</string>
+    <string name="youtube_link">YouTube link</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="bio">Bio</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="phone_number">Phone number</string>
+    <string name="email_address">Email address</string>
+    <string name="username">Username</string>
+    <string name="fullname">Fullname</string>
 
 </resources>
