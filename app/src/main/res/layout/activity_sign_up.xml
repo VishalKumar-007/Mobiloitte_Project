@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignUpActivity">
+    tools:context=".SignUpActivity"
+    android:background="#FFFFFF">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -275,27 +276,32 @@
             android:background="@drawable/style_rounded_corner">
         </Button>
 
-        <TextView
-            android:id="@+id/txtAlreadyHaveAnAccount"
+        <RelativeLayout
+            android:id="@+id/txtAlreadyHaveAccountAndLogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/already_have_an_account"
-            android:layout_below="@id/btnSignUp"
-            android:layout_marginTop="17dp"
-            android:layout_marginStart="95dp"
-            android:layout_marginBottom="10dp"/>
+            android:layout_below="@+id/btnSignUp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="18dp">
 
-        <TextView
-            android:id="@+id/txtLogin"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/login1"
-            android:layout_below="@id/btnSignUp"
-            android:layout_alignParentEnd="true"
-            android:layout_marginEnd="95dp"
-            android:layout_marginTop="15dp"
-            android:textSize="16sp"
-            android:layout_marginBottom="20dp" />
+            <TextView
+                android:id="@+id/txtAlreadyHaveAnAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/already_have_an_account"
+                android:layout_marginTop="17dp" />
+
+            <TextView
+                android:id="@+id/txtLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login1"
+                android:layout_marginTop="15dp"
+                android:textSize="16sp"
+                android:layout_toEndOf="@+id/txtAlreadyHaveAnAccount"
+                android:layout_marginStart="5dp"/>
+
+        </RelativeLayout>
 
     </RelativeLayout>
 
